@@ -1,0 +1,10 @@
+syntax = "proto3";
+import "3-excercises-solution/street_with_import.proto";
+
+package my.building;
+
+message Building {
+    string building_name = 1;
+    string building_number = 2;
+    my.street.Street street = 3; 
+}
